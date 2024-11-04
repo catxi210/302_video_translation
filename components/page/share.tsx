@@ -31,19 +31,29 @@ export default function SharePage() {
     _getVideoInfo();
   }, [shareId]);
 
-  const [title, poster, originalVideoUrl, realVideoUrl, videoType, id, language, subtitles, displayLanguage, originalSubtitles ] =
-    useVideoInfoStore((state) => [
-      state.title,
-      state.poster,
-      state.originalVideoUrl,
-      state.realVideoUrl,
-      state.videoType,
-      state.id,
-      state.language,
-      state.subtitles,
-      state.displayLanguage,
-      state.originalSubtitles,
-    ]);
+  const [
+    title,
+    poster,
+    originalVideoUrl,
+    realVideoUrl,
+    videoType,
+    id,
+    language,
+    subtitles,
+    displayLanguage,
+    originalSubtitles,
+  ] = useVideoInfoStore((state) => [
+    state.title,
+    state.poster,
+    state.originalVideoUrl,
+    state.realVideoUrl,
+    state.videoType,
+    state.id,
+    state.language,
+    state.subtitles,
+    state.displayLanguage,
+    state.originalSubtitles,
+  ]);
 
   const displaySubtitles = useMemo(() => {
     if (displayLanguage === "original") {
@@ -64,9 +74,15 @@ export default function SharePage() {
     height: footerHeight,
     width: footerWidth,
   } = useComponentSize();
+  const showBrand = process.env.NEXT_PUBLIC_SHOW_BRAND === "true";
   const loaded = useMemo(() => {
-    return !!(headerHeight && footerHeight && headerWidth && footerWidth);
-  }, [headerHeight, footerHeight, headerWidth, footerWidth]);
+    return !!(
+      headerHeight &&
+      (footerHeight || !showBrand) &&
+      headerWidth &&
+      (footerWidth || !showBrand)
+    );
+  }, [headerHeight, footerHeight, headerWidth, footerWidth, showBrand]);
 
   return (
     <main className="h-full">
@@ -102,7 +118,9 @@ export default function SharePage() {
           </div>
         </section>
       )}
-      <Footer className={cn("pb-6 min-w-[375px]")} ref={footerRef} />
+      {showBrand && (
+        <Footer className={cn("pb-6 min-w-[375px]")} ref={footerRef} />
+      )}
     </main>
   );
 }

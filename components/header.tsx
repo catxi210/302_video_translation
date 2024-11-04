@@ -288,6 +288,7 @@ export const Header = forwardRef<HTMLDivElement, HeaderProps>(
         setIsSubmitting(false);
       }
     }, [setIsSubmitting, t, url, language, logger, updateVideoInfo, refresh]);
+    const showBrand = process.env.NEXT_PUBLIC_SHOW_BRAND === "true";
 
     return (
       <header
@@ -298,13 +299,15 @@ export const Header = forwardRef<HTMLDivElement, HeaderProps>(
         ref={ref}
       >
         <div className="flex items-center space-x-4">
-          <Image
-            alt="302"
-            className="size-10 object-contain"
-            src="https://file.302.ai/gpt/imgs/5b36b96aaa052387fb3ccec2a063fe1e.png"
-            width={300}
-            height={300}
-          />
+          {showBrand && (
+            <Image
+              alt="302"
+              className="size-10 object-contain"
+              src="https://file.302.ai/gpt/imgs/5b36b96aaa052387fb3ccec2a063fe1e.png"
+              width={300}
+              height={300}
+            />
+          )}
           <h1 className="text-3xl font-bold">{t("title")}</h1>
         </div>
 

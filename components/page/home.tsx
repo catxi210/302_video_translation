@@ -47,6 +47,7 @@ export default function Home() {
   useTitle(t("title"));
   const player = useRef<MediaPlayerInstance>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const showBrand = process.env.NEXT_PUBLIC_SHOW_BRAND === "true";
 
   const {
     ref: headerRef,
@@ -59,11 +60,16 @@ export default function Home() {
     width: footerWidth,
   } = useComponentSize();
   const loaded = useMemo(() => {
-    return !!(headerHeight && footerHeight && headerWidth && footerWidth);
-  }, [headerHeight, footerHeight, headerWidth, footerWidth]);
+    return !!(headerHeight && (footerHeight || !showBrand) && headerWidth && (footerWidth || !showBrand));
+  }, [headerHeight, footerHeight, headerWidth, footerWidth, showBrand]);
+
+  useEffect(() => {
+    console.log(showBrand, loaded);
+  }, [showBrand, loaded]);
 
   const [shareId, setShareId] = useState<string | null>(null);
   const [shareDialogOpen, setShareDialogOpen] = useState(false);
+
 
   const handleShare = async () => {
     try {
@@ -170,13 +176,14 @@ export default function Home() {
           )}
         </section>
       )}
-      <Footer
+      {showBrand && (<Footer
         className={cn(
           "pb-6 min-w-[375px]",
           (!loaded || !realVideoUrl) && "fixed bottom-0 left-0 right-0"
         )}
-        ref={footerRef}
-      />
+          ref={footerRef}
+        />
+      )}
     </main>
   );
 }
