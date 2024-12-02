@@ -1,6 +1,6 @@
 # <p align="center">🎥 AI 视频实时翻译 🚀✨</p>
 
-<p align="center">AI视频实时翻译利用大语言模型对视频字幕进行实时翻译，支持Youtube、Bilibili等平台.</p>
+<p align="center">AI视频实时翻译利用大语言模型对视频字幕进行实时翻译，支持Youtube、Bilibili等平台。</p>
 
 <p align="center"><a href="https://302.ai/tools/word/" target="blank"><img src="https://file.302ai.cn/gpt/imgs/badge/21212.png" /></a></p >
 
@@ -32,6 +32,11 @@
 
 
 通过AI视频实时翻译,任何人都可以高效获取视频信息! 🎉🎥 让我们一起探索AI驱动的信息获取新世界吧! 🌟🚀
+
+## 🚩 未来更新计划
+- 增加对更多小众语言的支持
+- 拓展适配的视频平台数量
+- 多语言专业领域优化
 
 ## 技术栈
 - Next.js 14
