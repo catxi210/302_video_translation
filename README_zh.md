@@ -2,7 +2,7 @@
 
 <p align="center">AI视频实时翻译利用大语言模型对视频字幕进行实时翻译，支持Youtube、Bilibili等平台。</p>
 
-<p align="center"><a href="https://302.ai/tools/word/" target="blank"><img src="https://file.302ai.cn/gpt/imgs/badge/21212.png" /></a></p >
+<p align="center"><a href="https://302.ai/tools/word/" target="blank"><img src="https://file.302ai.cn/gpt/imgs/github/302_badge.png" /></a></p >
 
 <p align="center"><a href="README zh.md">中文</a> | <a href="README.md">English</a> | <a href="README_ja.md">日本語</a></p>
 
@@ -11,6 +11,7 @@
 来自[302.AI](https://302.ai)的[AI视频实时翻译](https://302.ai/tools/vt/)的开源版本。你可以直接登录302.AI，零代码零配置使用在线版本。或者对本项目根据自己的需求进行修改，传入302.AI的API KEY，自行部署。
 
 ## 界面预览
+根据上传的视频链接，AI将读取视频并对视频字幕进行实时翻译。
 ![界面预览](docs/视频翻译1.png)
 
 ## 项目特性
