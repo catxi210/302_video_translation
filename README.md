@@ -1,28 +1,44 @@
-# 🎥🤖 Welcome to 302.AI's AI Video Real-time Translation! 🚀✨
+# <p align="center">🎥 AI Video Real-time Translation 🚀✨</p>
 
-[Chinese](README_zh.md) | [English](README.md) | [Japanese](README_ja.md)
+<p align="center">AI video real-time translation utilizes large language models to conduct real-time translations on video subtitles, supporting platforms like YouTube and Bilibili.</p>
+
+<p align="center"><a href="https://302.ai/tools/word/" target="blank"><img src="https://file.302ai.cn/gpt/imgs/github/302_badge.png" /></a></p >
+
+<p align="center"><a href="README zh.md">中文</a> | <a href="README.md">English</a> | <a href="README_ja.md">日本語</a></p>
+
+![User Interface Preview](docs/视频实时翻译en.png)
 
 Open-source version of the [AI Video Real-time Translation](https://302.ai/tools/vt/) from [302.AI](https://302.ai).
 You can directly log in to 302.AI for a zero-code, zero-configuration online experience.
 Alternatively, customize this project to suit your needs, integrate 302.AI's API KEY, and deploy it yourself.
 
-## ✨ About 302.AI ✨
-[302.AI](https://302.ai) is a pay-as-you-go AI application platform, bridging the gap between AI capabilities and practical implementation.
-1. 🧠 Comprehensive AI capabilities: Incorporates the latest in language, image, audio, and video models from leading AI brands.
-2. 🚀 Advanced application development: We build genuine AI products, not just simple chatbots.
-3. 💰 No monthly fees: All features are pay-per-use, fully accessible, ensuring low entry barriers with high potential.
-4. 🛠 Powerful admin dashboard: Designed for teams and SMEs - managed by one, used by many.
-5. 🔗 API access for all AI features: All tools are open-source and customizable (in progress).
-6. 💡 Powerful development team: Launching 2-3 new applications weekly with daily product updates. Interested developers are welcome to contact us.
+## User Interface Preview
+Based on the uploaded video links, the AI will read the videos and perform real-time translations on the video subtitles.
+![User Interface Preview](docs/视频实时翻译英.png)
 
 ## Project Features
-1. 🎥 Multi-platform video support: Watch YouTube, TikTok, Bilibili, and Douyin videos.
-2. 🌍 Multilingual subtitle translation: Easily switch between Chinese, English, Japanese, German, French, and Korean.
-3. 📝 Subtitle format download: Get subtitle files in VTT, SRT, and TXT formats.
-4. 🔄 Comprehensive internationalization: Seamless conversion among multiple languages including Chinese, English, Japanese, German, French, and Korean.
-5. 💬 Convenient sharing feature: Quickly share exciting video content with friends.
+### 🎥 Multi-platform Videos
+It supports multi-platform videos, including those from YouTube, TikTok, Bilibili and Douyin.
+### 🌍 Multi-language Subtitle Translation
+Subtitles can be easily switched among Chinese, English, Japanese, German, French and Korean.
+### 📝 Subtitle Download
+Subtitle files in VTT, SRT and TXT formats can be obtained.
+### 💬 Convenient Sharing
+Quickly share wonderful video content with friends.
+### 🔄 Multi-language Support
+- Chinese
+- English
+- Japanese
+- German
+- French
+- Korean
 
 With AI Video Real-time Translation, anyone can efficiently access video information! 🎉🎥 Let’s explore the new world of AI-driven information acquisition together! 🌟🚀
+
+## 🚩 Future Update Plans 
+- [ ] Increase support for more niche languages
+- [ ] Expand the number of video platforms that are compatible
+- [ ] Optimize in the multi-language professional fields
 
 ## Tech Stack
 - Next.js 14
@@ -36,5 +52,12 @@ With AI Video Real-time Translation, anyone can efficiently access video informa
 4. Run the project `pnpm dev`
 5. Build and deploy `docker build -t video-translation . && docker run -p 3000:3000 video-translation`
 
-## User Interface Preview
-![User Interface Preview](docs/preview.png)
+
+## ✨ About 302.AI ✨
+[302.AI](https://302.ai) is a pay-as-you-go AI application platform, bridging the gap between AI capabilities and practical implementation.
+1. 🧠 Comprehensive AI capabilities: Incorporates the latest in language, image, audio, and video models from leading AI brands.
+2. 🚀 Advanced application development: We build genuine AI products, not just simple chatbots.
+3. 💰 No monthly fees: All features are pay-per-use, fully accessible, ensuring low entry barriers with high potential.
+4. 🛠 Powerful admin dashboard: Designed for teams and SMEs - managed by one, used by many.
+5. 🔗 API access for all AI features: All tools are open-source and customizable (in progress).
+6. 💡 Powerful development team: Launching 2-3 new applications weekly with daily product updates. Interested developers are welcome to contact us.
