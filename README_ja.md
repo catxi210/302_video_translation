@@ -2,9 +2,9 @@
 
 <p align="center">AI ビデオのリアルタイム翻訳は、大規模言語モデルを利用してビデオの字幕をリアルタイムで翻訳し、ユーチューブ（YouTube）、ビリビリ（Bilibili）などのプラットフォームをサポートしています。</p>
 
-<p align="center"><a href="https://302.ai/tools/word/" target="blank"><img src="https://file.302ai.cn/gpt/imgs/github/302_badge.png" /></a></p >
+<p align="center"><a href="https://302.ai/ja/tools/vt/" target="blank"><img src="https://file.302ai.cn/gpt/imgs/github/302_badge.png" /></a></p >
 
-<p align="center"><a href="README zh.md">中文</a> | <a href="README.md">English</a> | <a href="README_ja.md">日本語</a></p>
+<p align="center"><a href="README_zh.md">中文</a> | <a href="README.md">English</a> | <a href="README_ja.md">日本語</a></p>
 
 ![インターフェースプレビュー](docs/视频实时翻译jp.png)
 
